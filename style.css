@@ -1,0 +1,20 @@
+body{
+    overflow-x: hidden;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(119, 219, 88);
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.links:hover{
+    color: rgb(87, 160, 64);
+}
+
+.card{
+    height:fit-content !important;
+}
