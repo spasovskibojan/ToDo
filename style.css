@@ -18,3 +18,69 @@ body{
 .card{
     height:fit-content !important;
 }
+
+#ToDoMain{
+    width: 600px;
+    background-color: rgb(103, 181, 255);
+    border-radius: 20px;
+}
+
+.dropBTN{
+    background-color: rgb(103, 181, 255);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropDown{
+    display: inline;
+    margin-top: 0;
+    margin: 5em;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 135px;
+    margin: 5em;    
+    margin-top: 0px;
+}
+
+
+.dropDown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(90, 160, 224);
+}
+
+.sort{
+    display: block;
+    border: 0;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    width: inherit;
+    padding: 10px;
+}
+
+.sort:hover{
+    background-color: rgb(90, 160, 224);
+}
+
+.project{
+    display: none;
+}
+
+.aktiven{
+    display: block;
+}
+
+.row{
+    height: fit-content;
+}
