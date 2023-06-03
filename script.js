@@ -43,9 +43,10 @@ function showProject2(){
         }
     }
     
-    let project2 = document.getElementById("Project2");
-    project2.classList.add("aktiven");
+    let project1 = document.getElementById("Project2");
+    project1.classList.add("aktiven");
 }
+
 
 function showProject3(){
     let toDo = document.getElementById("ToDoMain");
