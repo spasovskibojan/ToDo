@@ -20,7 +20,7 @@ body{
 }
 
 #ToDoMain{
-    width: 600px;
+    width: 30em;
     background-color: rgb(103, 181, 255);
     border-radius: 20px;
 }
