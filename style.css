@@ -84,3 +84,8 @@ body{
 .row{
     height: fit-content;
 }
+
+.Headings{
+    text-align: center !important;
+    margin-bottom: 1.5em;
+}
