@@ -12,17 +12,17 @@
 
     <body>
         <nav> 
-            <div class="container-fluid p-0 pt-0">
+            <div class="container-fluid p-0">
                 <div class="nav nav-tabs nav-justified bg-light border" role="tablist">  <!--Napravi gi nav-->
                     <div class="nav-item p-2"><button onclick="toDoShow()" class="nav-link"><img src="Photos/favicon.png" style="width: 40px"></button></div>
-                    <div class="nav-item p-2 h4 dropdown dropend"><button class="links dropdown-toggle" data-bs-toggle="dropdown">My Lists</button> <!-- Javascript:Done -->
+                    <div class="nav-item p-2 h4 dropdown dropend mb-0 navlists"><button class="links dropdown-toggle" data-bs-toggle="dropdown">My Lists</button> <!-- Javascript:Done -->
                         <ul class="dropdown-menu">  
-                            <li class="nav-item"><button class="dropdown-item nav-link" onclick="showProject1()">Project 1</button></li> <!-- Da gi napraam aktivni-->
-                            <li class="nav-item"><button class="dropdown-item nav-link" onclick="showProject2()">Project 2</button></li> 
-                            <li class="nav-item"><button class="dropdown-item nav-link" onclick="showProject3()">Project 3</button></li>     
+                            <li class="nav-item"><button class="dropdown-item nav-link pro1" onclick="showProject1()">Project 1</button></li> <!-- Da gi napraam aktivni-->
+                            <li class="nav-item"><button class="dropdown-item nav-link pro2" onclick="showProject2()">Project 2</button></li> 
+                            <li class="nav-item"><button class="dropdown-item nav-link pro3" onclick="showProject3()">Project 3</button></li>     
                         </ul>
                     </div>
-                    <div class="nav-item p-2 h4"><a class="links">Create your list</a></div> <!-- Javascript so localStorage da se zacuvuva -->
+                    <div class="nav-item p-2 h4 d-flex navlists"><a class="links">Create your list</a></div> <!-- Javascript so localStorage da se zacuvuva. Ama treba PHP i server -->
                 </div>
             </div>       
         </nav>
@@ -48,18 +48,18 @@
         <!--Project 1-->
         <div id="Project1" class="project">        
             <div class="dropDown">                
-                <button class="dropBTN">Sort the list by:</button>  <!-- Javascript -->
+                <button class="dropBTN">Sort the lists by:</button>  <!-- Javascript -->
                 <div class="dropdown-content">
                     <button class="sort" onclick="sortByDate()">Date</button>
                     <button class="sort" onclick="sortByWeight()">Weight</button>
-                    <button class="sort" onclick="sortByImportance()">Importance</button>
+                    <button class="sort" onclick="sortByImportance()">Importance</button>       <!-- Naslov so najveke bukvi-->
                 </div>
             </div>                                        
                 
             <div class="container-fluid p-0">
                 <div class="row">
 
-                    <div class="col m-5">
+                    <div class="col m-5 mt-0">
                         <h3 class="Headings">To Do</h3>
                         <div class="card mb-3 p-0 text-center"> 
                             <div class="card-header">
@@ -92,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="col m-5">
+                    <div class="col m-5 mt-0">
                         <h3 class="Headings">Doing</h3>
                         <div class="card mb-3 p-0 text-center"> 
                             <div class="card-header">
@@ -111,7 +111,7 @@
                     </div>
                     
 
-                    <div class="col m-5">
+                    <div class="col m-5 mt-0">
                         <h3 class="Headings">Done</h3>
                         <div class="card mb-3 p-0 text-center"> 
                             <div class="card-header">
@@ -203,18 +203,18 @@
         <!--Project 2-->
         <div id="Project2" class="project">        
             <div class="dropDown">                
-                <button class="dropBTN">Sort the list by:</button>  <!-- Javascript -->
+                <button class="dropBTN">Sort the lists by:</button>  <!-- Javascript -->
                 <div class="dropdown-content">
                     <button class="sort" onclick="sortByDate()">Date</button>
                     <button class="sort" onclick="sortByWeight()">Weight</button>
-                    <button class="sort" onclick="sortByImportance()">Importance</button>
+                    <button class="sort" onclick="sortByImportance()">Importance</button> <!-- Naslov so najveke bukvi-->
                 </div>
             </div>                                        
                 
             <div class="container-fluid p-0">
                 <div class="row">
 
-                    <div class="col m-5">
+                    <div class="col m-5 mt-0">
                         <h3 class="Headings">To Do</h3>
                         <div class="card mb-3 p-0 text-center"> 
                             <div class="card-header">
@@ -233,40 +233,60 @@
                         </div>
                         <div class="card mb-3 p-0 text-center"> 
                             <div class="card-header">
-                                <h4 class="card-title">React</h4>
+                                <h4 class="card-title">Django</h4>
                             </div>                     
                             <div class="card-body">
                                 <p class="card-text">
-                                    React is a popular JavaScript library for building user interfaces, known for its component-based architecture and efficient rendering. 
-                                    It allows developers to create reusable UI components and efficiently update the UI based on changes in data, resulting in fast and interactive web applications.
+                                    Django is a high-level Python web framework that simplifies the process of building web applications. 
+                                    It follows the model-view-controller (MVC) architectural pattern and provides a robust set of tools and features, 
+                                    such as an ORM (Object-Relational Mapping) for database interactions, built-in authentication and authorization systems, and automatic admin interface generation. 
+                                    Django's emphasis on efficiency and scalability makes it a popular choice for developing secure and scalable web applications.
                                 </p>
-                                <img src="Photos/React.png" alt="React" class="img-thumbnail" style="height: 250px;">
+                                <img src="Photos/Django.png" alt="Django" class="img-thumbnail" style="height: 250px;">
                             </div>
                             <div class="card-footer">
-                                <a href="https://www.w3schools.com/react/default.asp" target="_blank">Learn React</a>
+                                <a href="https://www.w3schools.com/django/index.php" target="_blank">Learn Django</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col m-5">
+                    <div class="col m-5 mt-0">
                         <h3 class="Headings">Doing</h3>
                         <div class="card mb-3 p-0 text-center"> 
                             <div class="card-header">
-                                <h4 class="card-title">Bootstrap</h4>
+                                <h4 class="card-title">W3.CSS</h4>
                             </div>                     
                             <div class="card-body">
                                 <p class="card-text">
-                                    Learn all the fundamentals in bootstrap and earn a knowledge to use it in making dynamic websites.
+                                    w3.css is a lightweight and modern CSS framework that provides a streamlined way to design and style web pages. 
+                                    It offers a wide range of responsive components and a simple syntax,
+                                    making it easy for developers to create visually appealing and mobile-friendly websites.
                                 </p>
-                                <img src="Photos/Bootstrap.png" alt="Bootstrap 5" class="img-thumbnail">
+                                <img src="Photos/CSS.png" alt="w3css" class="img-thumbnail">
                             </div>
                             <div class="card-footer cyan">
-                                <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php" class="card-link" target="_blank">Learn Bootstrap 5</a>
+                                <a href="https://www.w3schools.com/w3css/default.asp" class="card-link" target="_blank">Learn W3.CSS</a>
+                            </div>                 
+                        </div>
+                        <div class="card mb-3 p-0 text-center"> 
+                            <div class="card-header">
+                                <h4 class="card-title">Java</h4>
+                            </div>                     
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Java is a versatile and widely used programming language known for its "write once, run anywhere" principle, 
+                                    allowing developers to write code that can run on multiple platforms. With its strong emphasis on simplicity, security, and portability, 
+                                    Java is commonly used in various domains, including web development, mobile app development, and enterprise software.
+                                </p>
+                                <img src="Photos/Java.png" alt="java" class="img-thumbnail">
+                            </div>
+                            <div class="card-footer cyan">
+                                <a href="https://www.w3schools.com/java/default.asp" class="card-link" target="_blank">Learn Java</a>
                             </div>                 
                         </div>
                     </div>                    
 
-                    <div class="col m-5">
+                    <div class="col m-5 mt-0">
                         <h3 class="Headings">Done</h3>
                         <div class="card mb-3 p-0 text-center"> 
                             <div class="card-header">
@@ -291,92 +311,110 @@
         <!--Project 3-->
         <div id="Project3" class="project">        
             <div class="dropDown">                
-                <button class="dropBTN">Sort the list by:</button>  <!-- Javascript -->
+                <button class="dropBTN">Sort the lists by:</button>  <!-- Javascript -->
                 <div class="dropdown-content">
                     <button class="sort" onclick="sortByDate()">Date</button>
                     <button class="sort" onclick="sortByWeight()">Weight</button>
-                    <button class="sort" onclick="sortByImportance()">Importance</button>
+                    <button class="sort" onclick="sortByImportance()">Importance</button>   <!-- Koj naslov ima najveke bukvi -->
                 </div>
             </div>                                        
-                <div class="container-fluid text-center">
-                    <div class="row">
-                        <div class="col h3">To Do</div>
-                        <div class="col h3">Doing</div>
-                        <div class="col h3">Done</div>
-                    </div>
-                </div>
-            <div class="container-fluid">
+                
+            <div class="container-fluid p-0">
                 <div class="row">
-                    <div class="card col m-5 p-0 text-center"> 
-                        <div class="card-header">
-                            <h4 class="card-title">C++</h4>
-                        </div>                     
-                        <div class="card-body">
-                            <p class="card-text">PHP is a back-end programming language used in web programming. It is server side 
-                                and good to know.
+                    <div class="col m-5 mt-0">
+                        <h3 class="Headings">To Do</h3>
+                        <div class="card mb-3 p-0 text-center"> 
+                            <div class="card-header">
+                                <h4 class="card-title">Java</h4>
+                            </div>                     
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Java is a versatile and widely used programming language known for its "write once, run anywhere" principle, 
+                                    allowing developers to write code that can run on multiple platforms. With its strong emphasis on simplicity, security, and portability, 
+                                    Java is commonly used in various domains, including web development, mobile app development, and enterprise software.
+                                </p>
+                                <img src="Photos/Java.png" alt="java" class="img-thumbnail">
+                            </div>
+                            <div class="card-footer cyan">
+                                <a href="https://www.w3schools.com/java/default.asp" class="card-link" target="_blank">Learn Java</a>
+                            </div>                 
+                        </div>
+                        <div class="card mb-3 p-0 text-center"> 
+                            <div class="card-header">
+                                <h4 class="card-title">Git</h4>
+                            </div>                     
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Git is a distributed version control system that allows multiple developers to collaborate on a project by tracking and managing changes to the 
+                                    source code. It provides features like branching, merging, and version history, enabling efficient code management, collaboration, 
+                                    and easy integration of changes from different contributors.
+                                </p>
+                                <img src="Photos/git.png" alt="git" class="img-thumbnail">
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://www.w3schools.com/git/default.asp" target="_blank">Learn Git</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col m-5 mt-0">
+                        <h3 class="Headings">Doing</h3>
+                        
+                        <div class="card mb-3 p-0 text-center"> 
+                            <div class="card-header">
+                                <h4 class="card-title">C++</h4>
+                            </div>                     
+                            <div class="card-body">
+                                <p class="card-text">
+                                    C++ is a powerful and popular programming language widely used for developing high-performance applications and systems. 
+                                    It provides a balance between low-level hardware control and high-level abstractions, making it suitable for a wide range of applications, 
+                                    including software development, game development, and embedded systems programming.
+                                </p>
+                                <img src="Photos/C++.png" alt="cpp" class="img-thumbnail" style="height: 250px;">
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://www.w3schools.com/cpp/default.asp" target="_blank">Learn C++</a>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="col m-5 mt-0">
+                        <h3 class="Headings">Done</h3>
+                        <div class="card mb-3 p-0 text-center"> 
+                            <div class="card-header">
+                                <h4 class="card-title">PHP</h4>
+                            </div>                     
+                            <div class="card-body">
+                                <p class="card-text">PHP is a back-end programming language used in web programming. It is server side 
+                                    and good to know.                                
+                                </p>
                                 <img src="Photos/Php.png" alt="Php" class="img-thumbnail">  
-                            </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://www.w3schools.com/php/default.asp" target="_blank">Learn PHP</a>
+                            </div>
+                        </div> 
+                        <div class="card mb-3 p-0 text-center"> 
+                            <div class="card-header">
+                                <h4 class="card-title">W3.CSS</h4>
+                            </div>                     
+                            <div class="card-body">
+                                <p class="card-text">
+                                    w3.css is a lightweight and modern CSS framework that provides a streamlined way to design and style web pages. 
+                                    It offers a wide range of responsive components and a simple syntax,
+                                    making it easy for developers to create visually appealing and mobile-friendly websites.
+                                </p>
+                                <img src="Photos/CSS.png" alt="w3css" class="img-thumbnail">
+                            </div>
+                            <div class="card-footer cyan">
+                                <a href="https://www.w3schools.com/w3css/default.asp" class="card-link" target="_blank">Learn W3.CSS</a>
+                            </div>                 
                         </div>
-                        <div class="card-footer">
-                            <a href="https://www.w3schools.com/php/default.asp" target="_blank">Learn PHP</a>
-                        </div>
-                    </div>
-                     <div class="card col m-5 p-0 text-center">                 
-                        <div class="card-header">
-                            <h4 class="card-title">Bootstrap</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Learn all the fundamentals in bootstrap and earn a knowledge to use it in making dynamic websites.
-                                <img src="Photos/Bootstrap.png" alt="Bootstrap 5" class="img-thumbnail">
-                            </p>
-                        </div>
-                        <div class="card-footer cyan">
-                            <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php" class="card-link" target="_blank">Learn Bootstrap 5</a>
-                        </div>                      
-                    </div>
-                    <div class="card col m-5 text-center">
-                        <div class="card-body">
-                            Done
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card col m-5 p-0 text-center"> 
-                        <div class="card-header">
-                            <h4 class="card-title">C++</h4>
-                        </div>                     
-                        <div class="card-body">
-                            <p class="card-text">PHP is a back-end programming language used in web programming. It is server side 
-                                and good to know.
-                                <img src="Photos/Php.png" alt="Php" class="img-thumbnail">  
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://www.w3schools.com/php/default.asp" target="_blank">Learn PHP</a>
-                        </div>
-                    </div>
-                     <div class="card col m-5 p-0 text-center">                 
-                        <div class="card-header">
-                            <h4 class="card-title">Bootstrap</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Learn all the fundamentals in bootstrap and earn a knowledge to use it in making dynamic websites.
-                                <img src="Photos/Bootstrap.png" alt="Bootstrap 5" class="img-thumbnail">
-                            </p>
-                        </div>
-                        <div class="card-footer cyan">
-                            <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php" class="card-link" target="_blank">Learn Bootstrap 5</a>
-                        </div>                      
-                    </div>
-                    <div class="card col m-5 text-center">
-                        <div class="card-body">
-                            Done
-                        </div>
-                    </div>
+                    </div>                    
+
                 </div>
             </div>
+        </div>
         </div>
         
 

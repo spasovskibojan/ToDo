@@ -20,7 +20,7 @@ body{
 }
 
 #ToDoMain{
-    width: 30em;
+    max-width: 500px;
     background-color: rgb(103, 181, 255);
     border-radius: 20px;
 }
@@ -50,7 +50,6 @@ body{
     margin: 5em;    
     margin-top: 0px;
 }
-
 
 .dropDown:hover .dropdown-content{
     display: block;
@@ -88,4 +87,16 @@ body{
 .Headings{
     text-align: center !important;
     margin-bottom: 1.5em;
+    background-color: aliceblue;
+}
+
+.navlists{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actives{
+    background-color: rgb(190, 197, 189) !important;
 }
